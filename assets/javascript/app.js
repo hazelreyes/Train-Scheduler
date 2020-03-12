@@ -76,11 +76,11 @@ database.ref().on("child_added", function (childSnapshot) {
     var nextArrival = moment(addedMinutes).format("LT");
 
     var newRow = $("<tr>").append(
-        $("<td>").text(trainName),
-        $("<td>").text(destination),
-        $("<td>").text(frequency),
-        $("<td>").text(nextArrival),
-        $("<td>").text(minutesAway),
+        $("<td>").text(trainName).attr("data-label", "Train Name"),
+        $("<td>").text(destination).attr("data-label", "Destination"),
+        $("<td>").text(frequency).attr("data-label", "Frequency (min)"),
+        $("<td>").text(nextArrival).attr("data-label", "Next Arrival"),
+        $("<td>").text(minutesAway).attr("data-label", "Minutes Away"),
     )
         .addClass("table-danger");
 
