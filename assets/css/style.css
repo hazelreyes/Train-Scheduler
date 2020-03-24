@@ -19,12 +19,16 @@ h4 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+.card-header {
+  background-color: rgb(211, 42, 42);
+}
+
 th {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 td,
-#form-control {
+.form-control {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -35,10 +39,6 @@ input[type]:focus,
   border-color: rgb(255, 150, 12);
   box-shadow: 0 1px 1px rgb(255, 150, 12) inset, 0 0 8px rgb(255, 150, 12);
   outline: 0 none;
-}
-
-.add-train-btn {
-  float: right;
 }
 
 @media screen and (max-width: 500px) {
@@ -72,5 +72,14 @@ input[type]:focus,
     }
     .card tbody {
         line-height: 10px;
+    }
+
+    .card {
+      background-color: rgba(245, 245, 245, 0.568);
+    }
+
+    #add-train-btn {
+      font-weight: bold;
+      background-color: pink;
     }
 }
